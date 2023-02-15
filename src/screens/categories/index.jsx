@@ -1,17 +1,17 @@
 import React from 'react';
-import { View, FlatList, SafeAreaView } from 'react-native';
-import { useSelector, useDispatch } from 'react-redux';
+import {  FlatList, SafeAreaView } from 'react-native';
+import { useSelector, useDispatch } from 'react-redux';//se agrega esto  clase 12
 
 import { styles } from './styles';
 import { CategoryItem } from '../../components';
-import { THEME } from '../../constants/theme';
 import { selectCategory } from '../../store/actions';
+//import {categories} from se saca esto y se reemplaza por el de arriba que dice store  clase 12
 
 const Categories = ({ navigation }) => {
-  const dispatch = useDispatch();
-  const categories = useSelector((state) => state.category.categories);
+  const dispatch = useDispatch();//se agrega esto  clase 12
+  const categories = useSelector((state) => state.category.categories);//se agrega esto  clase 12
   const onSelected = (item) => {
-    dispatch(selectCategory(item.id));
+    dispatch(selectCategory(item.id));  //se agrega esto  clase 12
     navigation.navigate('Products', {
       title: item.title,
     });

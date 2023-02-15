@@ -1,3 +1,4 @@
+// se agrega esto clase 12
 import { productsTypes } from '../types';
 
 const { SELECT_PRODUCT, FILTER_PRODUCTS } = productsTypes;

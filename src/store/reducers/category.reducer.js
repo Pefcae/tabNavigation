@@ -1,4 +1,6 @@
 /* eslint-disable no-case-declarations */
+// se agrega esto clase 12
+
 import { CATEGORIES } from '../../constants/data/index';
 import { categoryTypes } from '../types';
 

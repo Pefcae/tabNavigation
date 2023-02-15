@@ -1,10 +1,10 @@
 import { useFonts } from 'expo-font';
 import { View, ActivityIndicator } from 'react-native';
-import { Provider } from 'react-redux';
+import { Provider } from 'react-redux';  //cargamos esto
 
 import { THEME } from './constants/theme';
 import AppNavigator from './navigation';
-import store from './store';
+import store from './store'; // cargamos esto
 import { styles } from './styles';
 
 const App = () => {
@@ -22,6 +22,7 @@ const App = () => {
       </View>
     );
   }
+  //agregamos el provider y el sotre
   return (
     <Provider store={store}>
       <AppNavigator />

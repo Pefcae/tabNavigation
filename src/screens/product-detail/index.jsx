@@ -1,11 +1,11 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import { useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';  //se agrega en clase 12
 
 import { styles } from './styles';
 
 const ProductDetail = ({ navigation }) => {
-  const product = useSelector((state) => state.products.selected);
+  const product = useSelector((state) => state.products.selected);//se agrega en clase 12
 
   return (
     <View style={styles.container}>

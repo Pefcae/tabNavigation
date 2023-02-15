@@ -1,3 +1,4 @@
+// se agrega esto clase 12
 import { categoryTypes } from '../types/index';
 
 const { SELECT_CATEGORY } = categoryTypes;

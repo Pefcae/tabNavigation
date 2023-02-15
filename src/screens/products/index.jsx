@@ -1,18 +1,19 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from 'react';// se agrega esto clase 12
 import { SafeAreaView, FlatList } from 'react-native';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux'; // se agrega esto clase 12
 
 import { styles } from './styles';
 import { ProductItem } from '../../components';
-import { selectProduct, filterProducts } from '../../store/actions';
+import { selectProduct, filterProducts } from '../../store/actions'; // se agrega esto clase 12
+
 
 const Products = ({ navigation }) => {
-  const dispatch = useDispatch();
-  const category = useSelector((state) => state.category.selected);
-  const filteredProducts = useSelector((state) => state.products.filteredProducts);
+  const dispatch = useDispatch();//se agrega esto clase 12
+  const category = useSelector((state) => state.category.selected); //se agrega esto clase 12
+  const filteredProducts = useSelector((state) => state.products.filteredProducts);//se agrega esto
 
   const onSelected = (item) => {
-    dispatch(selectProduct(item.id));
+    dispatch(selectProduct(item.id));// se agrega esto clase 12
     navigation.navigate('ProductDetail', {
       title: item.title,
     });
@@ -22,7 +23,7 @@ const Products = ({ navigation }) => {
   const keyExtractor = (item) => item.id.toString();
 
   useEffect(() => {
-    dispatch(filterProducts(category.id));
+    dispatch(filterProducts(category.id)); //se agrega esto clase 12
   }, []);
 
   return (

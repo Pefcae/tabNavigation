@@ -3,7 +3,6 @@ import { View, Text, FlatList } from 'react-native';
 import { styles } from './styles';
 import EcoPointItem from '../../components/ecoPoint-item';
 import { ECOPOINTS } from '../../constants/data/ecoPuntos';
-import { ORDERS } from '../../constants/data/orders';
 
 const EcoPuntos = ({ navigation }) => {
   const renderItem = ({ item }) => <EcoPointItem item={item} />;

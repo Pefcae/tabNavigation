@@ -1,3 +1,5 @@
+// se agrega esto clase 12
+
 import { PRODUCTS } from '../../constants/data/index';
 import { productsTypes } from '../types';
 
